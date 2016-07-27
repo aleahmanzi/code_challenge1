@@ -1,0 +1,89 @@
+body, html { height: 100%; width: 100%; }
+
+body { font-family: 'Karla'; color: #777; } 
+
+.nav_wrap { position: fixed; left: 0; bottom: 0; right: 0; height: 40px; border-top: 1px solid #ddd; background-color: #fff; z-index: 1; }
+.main_nav { display: none; }
+.mini_nav { color: #333; position: fixed; right: 25px; font-size: 40px; line-height: 25px; }
+.mini_nav:hover { color: #657b83; cursor: pointer; }
+
+.logo_wrap { position: fixed; bottom: 12px; left: 12px; width: 170px; text-align: center; line-height: 18px; color: #333; font-size: 20px;letter-spacing: -.01em; }
+.sticky_nav { top: 0; z-index: 1; position: fixed; width: 100%; border-bottom: 1px solid #ddd; }
+.logo_move { position: fixed; top: 12px; left: 12px; width: 170px; text-align: center; line-height: 18px; color: #333; font-size: 20px;letter-spacing: -.01em; }
+
+/* -- nav bar - -- */
+
+
+.main_wrap { outline: 0px solid black; width: 100%; height: 500px; color: white; }
+
+.img_wrap { outline: 10px solid red; width: 100%; height: 100%; }
+.img_data { outline: 0px solid blue; width: 100%; height: 100%; margin: 0 auto; }
+.image { margin: 0 auto; background-image: linear-gradient( to bottom right, rgba(0, 0, 150, .5) 0%, rgba(0,0,0,.9) 80% ), url(../pics/shirts.jpg); width: 100%; height: 700px; }
+
+.arrow_wrap { outline: 0px solid blue; height: 50px; width: 500px; position: relative; top: 175px; margin: 0 auto; }
+.arrow { outline: 0px solid red; position: relative; left: 230px; bottom: 10px; cursor: pointer; }
+
+.title_wrap { outline: 0px solid red; width: 275px; position: relative; float: right; right: 15px; bottom: 100px; }
+.header_wrap { outline: 0px solid blue; font-size: 30px; }
+.header_wrap p { position: relative; }
+.what_wrap { outline: 0px solid black; font-size: 9px; position: relative; bottom: 30px; }
+.main_buttons { position: relative; bottom: 45px; }
+.process { display: inline-block; cursor: pointer; }
+.products { display: inline-block; cursor: pointer; }
+.button_wrap { font-size: 10px; height: 20px; width: 125px; outline: 2px solid white; margin-right: 5px; }
+.button_wrap p { position: relative; top: 5px; left: 30px; }
+
+/* -- image and main text - -- */
+
+#part_two { outline: 0px solid red; width: 100%; height: 650px; position: relative; right: 7px; top: 235px; font-size: 16px; }
+.another_wrap { outline: 0px solid blue; width: 500px; height: 400px; margin: 0 auto; }
+
+
+.second_title { outline: 0px solid black; display: inline-block; width: 100%; text-align: center; }
+.img_two { outline: 0px solid red; display: inline-block; width: 100px; position: relative; left: 25px; }
+.img_wrap { outline: 0px solid #eee; display: block;
+	margin: 0 auto; height: 225px; }
+
+.lines { border-top: 1px solid #444; border-bottom: 1px solid #444; width: 170px; height: 425px; margin: 0 auto; -moz-transform: -o-transform;  -moz-transform: rotate(75deg); -o-transform: rotate(15deg); -webkit-transform: rotate(75deg); -ms-transform: rotate(15deg); transform: rotate(75deg); position: relative; bottom: 460px; right: 7px; }
+
+.footer_wrap { outline: 0px solid blue; width: 100%; height: 150px; font-size: 11px; position: relative; bottom: 450px; }
+.footer_title { text-align: center; }
+.footer_title li { list-style: none; cursor: pointer; position: relative; right: 18px; bottom: 10px; font-size: 9px; }
+
+/* -- page bottom with footer - -- */
+
+@media only screen and (min-width: 800px) { 
+.arrow_wrap { top: 300px; }
+.title_wrap { width: 350px; right: 25px; bottom: 100px; }
+.header_wrap { font-size: 40px; }
+.what_wrap { outline: 0px solid black; font-size: 11px; bottom: 35px; }
+.main_buttons { position: relative; bottom: 45px; }
+.button_wrap { font-size: 13px; height: 30px; width: 160px; margin-right: 5px; }
+.button_wrap p { left: 35px; }
+
+
+#part_two { font-size: 20px; }
+.another_wrap { outline: 0px solid blue; width: 700px; height: 400px; left: 25px; margin: 0 auto; position: relative; bottom: 150px;}
+.img_wrap { height: 300px; }
+.lines { width: 300px; height: 550px; bottom: 475px; -moz-transform: -o-transform;  -moz-transform: rotate(75deg); -o-transform: rotate(15deg); -webkit-transform: rotate(75deg); -ms-transform: rotate(15deg); transform: rotate(75deg); }
+.footer_wrap { font-size: 15px; }
+.footer_title { text-align: center; }
+.footer_title li { font-size: 12px; }
+}
+
+@media only screen and (min-width: 1200px) { 
+.mini_nav { display: none; }
+.logo_wrap { top: 10px; left: 15px; background-color: #fff; }
+.nav_wrap { left: 0; width: 200px; border-right: 1px solid #ddd; right: none; border-top: 0; height: 100%; }
+.main_nav { display: block; }
+.main_nav { position: fixed; left: 35px; top: 135px; text-align: right; width: 125px; }
+.main_nav li { list-style: none; margin-bottom: 25px; }
+.main_nav li:hover { color: #002b36; cursor: pointer; }
+.main_nav a { text-decoration: none; color: #839496; }
+  
+.another_wrap { position: relative; bottom: 150px;}
+
+}
+
+/* -- media screen changes - -- */
+
